@@ -10,8 +10,10 @@
 
 All three are under development and are not supported production releases. Releases follow one order: circle-hub tags first, the Circle extension follows against that tag, packs follow the hub schema — see the compatibility matrix.
 
-Work across the repositories is tracked on the [Circle platforms project board](https://github.com/orgs/circle-platforms/projects/1). Each repository has its own `CONTRIBUTING.md` and an `AGENTS.md` for coding agents; security reports go through each repository's private vulnerability reporting (see [SECURITY](https://github.com/circle-platforms/.github/blob/main/SECURITY.md)).
+Maintainers track cross-repository work on the [internal Circle platforms project board](https://github.com/orgs/circle-platforms/projects/1), which is not accessible to public visitors. Public plans and open work are recorded in [circle Issues](https://github.com/circle-platforms/circle/issues), [circle-hub Issues](https://github.com/circle-platforms/circle-hub/issues) and [circle-packs Issues](https://github.com/circle-platforms/circle-packs/issues). Each product repository has its own `CONTRIBUTING.md` and an `AGENTS.md` for coding agents; security reports go through that repository's private vulnerability reporting (see [SECURITY](https://github.com/circle-platforms/.github/blob/main/SECURITY.md)).
 
 ---
 
 **中文** · Circle 是编程 agent 的 harness；circle-hub 是它接入的团队 hub；circle-packs 放装到 hub 上的技能包与产品线包。三个仓库一套标准：四个对象（资料、工作、执行、方法）各由记录、资产、审批策略、证据、扩展点组成；审批只在变更集、由独立审批人决定；运行走执行链，结果只有通过 / 固定错误码 / 如实的未知；harness 中立的原语（Skill、Tool、MCP server、Hook）按各 harness 自己的格式治理。三者都在开发中，不是受支持的生产发行。发布顺序：circle-hub 先打 tag，Circle 扩展随后，packs 跟 hub 的 schema。
+
+跨仓工作看板供维护者内部使用，公开访客无法访问；公开计划与待办见上面三个产品仓库的 Issues。
